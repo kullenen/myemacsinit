@@ -1,7 +1,10 @@
 Execute commands:
 
 cd ~/.emacs.d
+
 git clone https://github.com/kullenen/myemacsinit.git
+
+
 
 
 Add to .emacs folowing lines:
