@@ -1,0 +1,39 @@
+;;; myinit.common.el --- My Initialization file for Emacs
+
+;;; Commentary:
+;; 
+
+;;; Code:
+
+; ibuffer
+(global-set-key (kbd "S-<f5>") 'ibuffer)
+
+;(set-default-font "Monaco")
+(set-frame-font "Monaco" nil t)
+(set-face-attribute 'default (selected-frame) :height 100)
+(setq column-number-mode t)
+
+;; save minibufer historty between sessions
+(savehist-mode t)
+
+;; autosave desktop session
+(desktop-save-mode 1)
+
+;; no bars !!!
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+;(scroll-bar-mode -1)
+
+;; w3m for php manual
+(use-package w3m
+  :ensure t
+  :init
+  (setq browse-url-browser-function 'w3m-browse-url))
+
+;; auto complete
+(use-package auto-complete
+  :ensure t)
+
+(provide 'myinit.common)
+
+;;; myinit.common.el ends here
