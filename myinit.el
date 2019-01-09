@@ -30,6 +30,12 @@
 
 (require 'myinit.php)
 
+(require 'myinit.json)
+
+(require 'myinit.xml)
+
+(require 'myinit.slime)
+
 
 (toggle-frame-maximized)
 

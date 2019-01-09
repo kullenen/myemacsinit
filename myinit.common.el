@@ -32,7 +32,12 @@
 
 ;; auto complete
 (use-package auto-complete
-  :ensure t)
+  :ensure t
+  :config
+  (global-auto-complete-mode))
+
+;; highlight brackets
+(show-paren-mode t)
 
 (provide 'myinit.common)
 

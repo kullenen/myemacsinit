@@ -6,12 +6,12 @@
 ;;; Code:
 
 (use-package magit
-  :ensure t
-  :init
-  (magit-add-section-hook
-   'magit-status-sections-hook
-   '(lambda ()
-      (insert (concat "Tag-long: " (magit-git-string "describe" "--tags" "--long") "\n")))))
+  :ensure t)
+
+(magit-add-section-hook
+ 'magit-status-sections-hook
+ '(lambda ()
+    (insert (concat "Tag-long: " (magit-git-string "describe" "--tags" "--long") "\n"))))
 
 (provide 'myinit.magit)
 
