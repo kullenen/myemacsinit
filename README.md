@@ -7,7 +7,7 @@ git clone https://github.com/kullenen/myemacsinit.git
 
 
 
-Add to .emacs folowing lines:
+Add to .emacs the following lines:
 
 (add-to-list 'load-path "~/.emacs.d/myemacsinit")
 
