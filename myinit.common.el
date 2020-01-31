@@ -7,6 +7,7 @@
 
 ; ibuffer
 (global-set-key (kbd "S-<f5>") 'ibuffer)
+(global-set-key (kbd "<f17>") 'ibuffer)
 
 ;(set-default-font "Monaco")
 (set-frame-font "Monaco" nil t)
