@@ -5,13 +5,21 @@
 
 ;;; Code:
 
+(defun myinit-set-font ()
+  "Set font default parameters."
+  (interactive)
+  ;; (set-default-font "Monaco")
+  (set-frame-font "Monaco" nil t)
+  (set-face-attribute 'default (selected-frame) :height 100))
+
+
 ; ibuffer
 (global-set-key (kbd "S-<f5>") 'ibuffer)
 (global-set-key (kbd "<f17>") 'ibuffer)
 
-;(set-default-font "Monaco")
-(set-frame-font "Monaco" nil t)
-(set-face-attribute 'default (selected-frame) :height 100)
+
+(myinit-set-font)
+
 (setq column-number-mode t)
 
 ;; save minibufer historty between sessions
