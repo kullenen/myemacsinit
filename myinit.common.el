@@ -10,15 +10,13 @@
   (interactive)
   ;; (set-default-font "Monaco")
   (set-frame-font "Monaco" nil t)
-  (set-face-attribute 'default (selected-frame) :height 100))
+  (set-face-attribute 'default (selected-frame) :height 110))
 
 
 ; ibuffer
 (global-set-key (kbd "S-<f5>") 'ibuffer)
 (global-set-key (kbd "<f17>") 'ibuffer)
 
-
-(myinit-set-font)
 
 (setq column-number-mode t)
 
@@ -47,6 +45,12 @@
 
 ;; highlight brackets
 (show-paren-mode t)
+
+;; theme
+(load-theme 'wombat)
+
+(myinit-set-font)
+
 
 (provide 'myinit.common)
 

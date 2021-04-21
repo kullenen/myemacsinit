@@ -7,15 +7,27 @@
 
 (when (>= emacs-major-version 24)
   (require 'package)
+
+  ;; (add-to-list
+  ;;  'package-archives
+  ;;  '("melpa-stable" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+  ;;  t)
+
   (add-to-list
    'package-archives
-   ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
-   '("melpa" . "http://melpa.milkbox.net/packages/")
-   t))
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+
+  ;; (add-to-list
+  ;;  'package-archives
+  ;;  ;; '("melpa" . "http://melpa.milkbox.net/packages/")
+  ;;  t)
+
   ;; (add-to-list
   ;;  'package-archives
   ;;  '("marmalade" . "https://marmalade-repo.org/packages/")
   ;;  t))
+  )
 
 (package-initialize)
 
